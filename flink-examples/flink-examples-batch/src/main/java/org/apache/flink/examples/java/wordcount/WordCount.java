@@ -80,7 +80,7 @@ public class WordCount {
 
 		// emit result
 		if (params.has("output")) {
-			counts.writeAsCsv(params.get("output"), "\n", " ");
+			counts.writeAsCsv(params.get("output"), "\n",";");
 			// execute program
 			env.execute("WordCount Example");
 		} else {
